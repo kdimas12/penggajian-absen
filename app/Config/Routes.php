@@ -36,7 +36,13 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Login::index');
-$routes->get('/admin', 'Admin::index');
+
+$routes->group('admin', function ($routes) {
+    $routes->get('/', 'Admin::index');
+    $routes->get('/jabatan', 'AdminJabatan::index');
+    $routes->get('/wilayah', 'AdminWilayah::index');
+    $routes->get('/pegawai', 'AdminPegawai::index');
+});
 
 /*
  * --------------------------------------------------------------------
