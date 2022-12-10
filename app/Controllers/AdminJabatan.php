@@ -30,4 +30,9 @@ class AdminJabatan extends BaseController
 
         echo view('jabatan_tambah');
     }
+
+    public function loadData()
+    {
+        return datatables('tbl_jabatan')->make();
+    }
 }
