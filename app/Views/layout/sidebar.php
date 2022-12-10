@@ -37,19 +37,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../../index.html" class="nav-link">
+                            <a href="<?= base_url('admin/jabatan') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Jabatan</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../../index2.html" class="nav-link">
+                            <a href="<?= base_url('admin/jabatan') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Wilayah</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../../index3.html" class="nav-link">
+                            <a href="<?= base_url('admin/pegawai') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Pegawai</p>
                             </a>
