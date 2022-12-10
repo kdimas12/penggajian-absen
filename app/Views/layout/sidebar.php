@@ -43,7 +43,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= base_url('admin/jabatan') ?>" class="nav-link">
+                            <a href="<?= base_url('admin/wilayah') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Wilayah</p>
                             </a>
