@@ -51,6 +51,13 @@ class AdminJabatan extends BaseController
         echo view('jabatan_ubah', $data);
     }
 
+    public function hapus($id_jabatan)
+    {
+        $jabatan = new JabatanModel();
+        $jabatan->delete($id_jabatan);
+        return redirect()->to('admin/jabatan');
+    }
+
     public function loadData()
     {
         return datatables('tbl_jabatan')->addColumn('aksi', function ($data) {
