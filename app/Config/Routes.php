@@ -43,7 +43,8 @@ $routes->group('admin', function ($routes) {
         $routes->get('/', 'AdminJabatan::index');
         $routes->add('tambah', 'AdminJabatan::tambah');
         $routes->get('json', 'AdminJabatan::loadData');
-        $routes->add('edit', 'AdminJabatan::edit');
+        $routes->add('(:segment)/ubah', 'AdminJabatan::ubah/$1');
+        $routes->get('(:segment)/hapus', 'AdminJabatan::hapus/$1');
     });
     $routes->get('wilayah', 'AdminWilayah::index');
     $routes->get('pegawai', 'AdminPegawai::index');
