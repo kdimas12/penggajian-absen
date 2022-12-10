@@ -10,7 +10,7 @@ class Penggajian extends Migration
     {
         // tbl_admin
         $this->forge->addField([
-            'id_admin' => ['type' => 'INT', 'constraint' => 5],
+            'id_admin' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
             'nama' => ['type' => 'VARCHAR', 'constraint' => 30],
             'username' => ['type' => 'VARCHAR', 'constraint' => 10],
             'password' => ['type' => 'VARCHAR', 'constraint' => 50]
@@ -20,7 +20,7 @@ class Penggajian extends Migration
 
         // tbl_jabatan
         $this->forge->addField([
-            'id_jabatan' => ['type' => 'INT', 'constraint' => 5],
+            'id_jabatan' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
             'nama' => ['type' => 'VARCHAR', 'constraint' => 20],
             'uang_lembur' => ['type' => 'INT', 'constraint' => 5],
             'uang_makan' => ['type' => 'INT', 'constraint' => 5]
@@ -30,7 +30,7 @@ class Penggajian extends Migration
 
         // tbl_wilayah
         $this->forge->addField([
-            'id_wilayah' => ['type' => 'INT', 'constraint' => 5],
+            'id_wilayah' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
             'nama' => ['type' => 'INT', 'constraint' => 20]
         ]);
         $this->forge->addPrimaryKey('id_wilayah');
@@ -38,7 +38,7 @@ class Penggajian extends Migration
 
         // tbl_pegawai
         $this->forge->addField([
-            'id_pegawai' => ['type' => 'INT', 'constraint' => 5],
+            'id_pegawai' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
             'nama' => ['type' => 'VARCHAR', 'constraint' => 30],
             'nip' => ['type' => 'INT', 'constraint' => 18],
             'password' => ['type' => 'VARCHAR', 'constraint' => 50],
@@ -54,7 +54,7 @@ class Penggajian extends Migration
 
         // tbl_absensi
         $this->forge->addField([
-            'id_absensi' => ['type' => 'INT', 'constraint' => 5],
+            'id_absensi' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
             'id_pegawai' => ['type' => 'INT', 'constraint' => 5],
             'tgl_absensi' => ['type' => 'DATETIME'],
             'status_absensi' => ['type' => 'ENUM', 'constraint' => ['hadir', 'alpa'], 'default' => 'alpa']
@@ -66,7 +66,7 @@ class Penggajian extends Migration
 
         // tbl_gaji
         $this->forge->addField([
-            'id_gaji' => ['type' => 'INT', 'constraint' => 5],
+            'id_gaji' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
             'id_pegawai' => ['type' => 'INT', 'constraint' => 5],
             'total_gaji' => ['type' => 'INT', 'constraint' => 20],
             'tgl_gaji' => ['type' => 'DATE']
