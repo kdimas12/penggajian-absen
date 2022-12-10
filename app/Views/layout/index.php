@@ -54,6 +54,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- DataTables  & Plugins -->
     <script src="<?= base_url('plugins/datatables/jquery.dataTables.min.js') ?>"></script>
     <script src="<?= base_url('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') ?>"></script>
+    <script src="<?= base_url('datatables-responsive/js/dataTables.responsive.min.js') ?>"></script>
+    <script src="<?= base_url('datatables-responsive/js/responsive.bootstrap4.min.js') ?>"></script>
     <script src="<?= base_url('plugins/datatables-buttons/js/dataTables.buttons.min.js') ?>"></script>
     <script src="<?= base_url('plugins/datatables-buttons/js/buttons.bootstrap4.min.js') ?>"></script>
     <script src="<?= base_url('plugins/jszip/jszip.min.js') ?>"></script>
