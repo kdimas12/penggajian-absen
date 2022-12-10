@@ -51,6 +51,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="<?= base_url('plugins/jquery/jquery.min.js') ?>"></script>
     <!-- Bootstrap 4 -->
     <script src="<?= base_url('plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <!-- jquery-validation -->
+    <script src="<?= base_url('plugins/jquery-validation/jquery.validate.min.js') ?>"></script>
+    <script src="<?= base_url('plugins/jquery-validation/additional-methods.min.js') ?>"></script>
     <!-- DataTables  & Plugins -->
     <script src="<?= base_url('plugins/datatables/jquery.dataTables.min.js') ?>"></script>
     <script src="<?= base_url('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') ?>"></script>
