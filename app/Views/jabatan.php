@@ -17,6 +17,7 @@
                                 <th>Nama Jabatan</th>
                                 <th>Uang Lembur</th>
                                 <th>Uang Makan</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                     </table>
