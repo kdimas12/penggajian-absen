@@ -10,4 +10,9 @@ class AdminJabatan extends BaseController
     {
         return view('jabatan');
     }
+
+    public function tambah()
+    {
+        return view('jabatan_tambah');
+    }
 }
