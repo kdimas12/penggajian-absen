@@ -10,6 +10,7 @@ $(function () {
       { data: "nama", name: "nama" },
       { data: "uang_lembur", name: "uang_lembur" },
       { data: "uang_makan", name: "uang_makan" },
+      { data: "aksi", name: "aksi" },
     ],
     responsive: true,
     lengthChange: false,
