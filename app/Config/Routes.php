@@ -39,7 +39,10 @@ $routes->get('/', 'Login::index');
 
 $routes->group('admin', function ($routes) {
     $routes->get('/', 'Admin::index');
-    $routes->get('jabatan', 'AdminJabatan::index');
+    $routes->group('jabatan', function ($routes) {
+        $routes->add('tambah', 'AdminJabatan::tambah');
+        $routes->add('edit', 'AdminJabatan::edit');
+    });
     $routes->get('wilayah', 'AdminWilayah::index');
     $routes->get('pegawai', 'AdminPegawai::index');
 });
