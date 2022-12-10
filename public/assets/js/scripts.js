@@ -24,4 +24,34 @@ $(function () {
     .buttons()
     .container()
     .appendTo("#jabatan-table_wrapper .col-md-6:eq(0)");
+
+  $("#form-jabatan").validate({
+    rules: {
+      nama_jabatan: {
+        required: true,
+      },
+      uang_lembur: {
+        required: true,
+      },
+      uang_makan: {
+        required: true,
+      },
+    },
+    messages: {
+      nama_jabatan: "Nama Jabatan harus diisi!",
+      uang_lembur: "Uang lembur harus diisi!",
+      uang_makan: "Uang makan harus diisi!",
+    },
+    errorElement: "span",
+    errorPlacement: function (error, element) {
+      error.addClass("invalid-feedback");
+      element.closest(".form-group").append(error);
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-invalid");
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).removeClass("is-invalid");
+    },
+  });
 });
