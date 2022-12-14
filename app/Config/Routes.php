@@ -50,6 +50,10 @@ $routes->group('admin', function ($routes) {
     $routes->get('pegawai', 'AdminPegawai::index');
 });
 
+$routes->group('user', function ($routes) {
+    $routes->get('/', 'User::index');
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
