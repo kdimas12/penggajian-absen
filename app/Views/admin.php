@@ -6,13 +6,13 @@
         <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
                 <div class="inner">
-                    <h3>150</h3>
+                    <h3><?= $pegawai ?></h3>
                     <p>Pegawai</p>
                 </div>
                 <div class="icon">
                     <i class="fas fa-user-tie"></i>
                 </div>
-                <a href="#" class="small-box-footer">
+                <a href="<?= base_url('admin/pegawai') ?>" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
@@ -20,13 +20,13 @@
         <div class="col-lg-3 col-6">
             <div class="small-box bg-success">
                 <div class="inner">
-                    <h3>150</h3>
-                    <p>New Orders</p>
+                    <h3><?= $wilayah ?></h3>
+                    <p>Wilayah</p>
                 </div>
                 <div class="icon">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <a href="#" class="small-box-footer">
+                <a href="<?= base_url('admin/wilayah') ?>" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
@@ -34,13 +34,13 @@
         <div class="col-lg-3 col-6">
             <div class="small-box bg-warning">
                 <div class="inner">
-                    <h3>150</h3>
-                    <p>New Orders</p>
+                    <h3><?= $jabatan ?></h3>
+                    <p>Jabatan</p>
                 </div>
                 <div class="icon">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <a href="#" class="small-box-footer">
+                <a href="<?= base_url('admin/jabatan') ?>" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
