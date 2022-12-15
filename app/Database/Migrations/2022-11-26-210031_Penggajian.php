@@ -21,7 +21,7 @@ class Penggajian extends Migration
         // tbl_jabatan
         $this->forge->addField([
             'id_jabatan' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
-            'nama' => ['type' => 'VARCHAR', 'constraint' => 20],
+            'nama_jabatan' => ['type' => 'VARCHAR', 'constraint' => 20],
             'uang_lembur' => ['type' => 'INT', 'constraint' => 5],
             'uang_makan' => ['type' => 'INT', 'constraint' => 5]
         ]);
@@ -31,7 +31,7 @@ class Penggajian extends Migration
         // tbl_wilayah
         $this->forge->addField([
             'id_wilayah' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
-            'nama' => ['type' => 'VARCHAR', 'constraint' => 20]
+            'nama_wilayah' => ['type' => 'VARCHAR', 'constraint' => 20]
         ]);
         $this->forge->addPrimaryKey('id_wilayah');
         $this->forge->createTable('tbl_wilayah');
@@ -39,7 +39,7 @@ class Penggajian extends Migration
         // tbl_pegawai
         $this->forge->addField([
             'id_pegawai' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
-            'nama' => ['type' => 'VARCHAR', 'constraint' => 30],
+            'nama_pegawai' => ['type' => 'VARCHAR', 'constraint' => 30],
             'nip' => ['type' => 'VARCHAR', 'constraint' => 18],
             'password' => ['type' => 'VARCHAR', 'constraint' => 50],
             'id_jabatan' => ['type' => 'INT', 'constraint' => 5],
