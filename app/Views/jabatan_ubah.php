@@ -12,7 +12,7 @@
             <div class="card-body">
                 <div class="form-group">
                     <label for="nama_jabatan">Nama jabatan</label>
-                    <input type="text" class="form-control" id="nama_jabatan" name="nama_jabatan" value="<?= $jabatan['nama'] ?>">
+                    <input type="text" class="form-control" id="nama_jabatan" name="nama_jabatan" value="<?= $jabatan['nama_jabatan'] ?>">
                 </div>
                 <div class="form-group">
                     <label for="uang_lembur">Uang lembur</label>

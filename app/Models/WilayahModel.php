@@ -10,5 +10,5 @@ class WilayahModel extends Model
     protected $primaryKey = 'id_wilayah';
 
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['nama'];
+    protected $allowedFields = ['nama_wilayah'];
 }

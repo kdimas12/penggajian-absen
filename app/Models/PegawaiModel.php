@@ -10,5 +10,5 @@ class PegawaiModel extends Model
     protected $primaryKey = 'id_pegawai';
 
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['nama', 'nip', 'password', 'id_jabatan', 'id_wilayah'];
+    protected $allowedFields = ['nama_pegawai', 'nip', 'password', 'id_jabatan', 'id_wilayah'];
 }

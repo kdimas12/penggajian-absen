@@ -33,7 +33,7 @@
                     <label for="jabatan">Jabatan</label>
                     <select class="custom-select" id="jabatan" name="jabatan">
                         <?php foreach ($jabatan as $jab) : ?>
-                            <option value="<?= $jab['id_jabatan'] ?>"><?= $jab['nama'] ?></option>
+                            <option value="<?= $jab['id_jabatan'] ?>"><?= $jab['nama_jabatan'] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>
@@ -41,7 +41,7 @@
                     <label for="wilayah">Wilayah</label>
                     <select class="custom-select" id="wilayah" name="wilayah">
                         <?php foreach ($wilayah as $wil) : ?>
-                            <option value="<?= $wil['id_wilayah'] ?>"><?= $wil['nama'] ?></option>
+                            <option value="<?= $wil['id_wilayah'] ?>"><?= $wil['nama_wilayah'] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>

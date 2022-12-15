@@ -10,5 +10,5 @@ class JabatanModel extends Model
     protected $primaryKey = 'id_jabatan';
 
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['nama', 'uang_lembur', 'uang_makan'];
+    protected $allowedFields = ['nama_jabatan', 'uang_lembur', 'uang_makan'];
 }
