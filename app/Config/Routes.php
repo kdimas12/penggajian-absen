@@ -46,7 +46,13 @@ $routes->group('admin', function ($routes) {
         $routes->add('(:segment)/ubah', 'AdminJabatan::ubah/$1');
         $routes->get('(:segment)/hapus', 'AdminJabatan::hapus/$1');
     });
-    $routes->get('wilayah', 'AdminWilayah::index');
+    $routes->group('wilayah', function ($routes) {
+        $routes->get('/', 'AdminWilayah::index');
+        $routes->add('tambah', 'AdminWilayah::tambah');
+        $routes->get('json', 'AdminWilayah::loadData');
+        $routes->add('(:segment)/ubah', 'AdminWilayah::ubah/$1');
+        $routes->get('(:segment)/hapus', 'AdminWilayah::hapus/$1');
+    });
     $routes->get('pegawai', 'AdminPegawai::index');
 });
 
