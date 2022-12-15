@@ -72,6 +72,7 @@ $(function () {
     columns: [
       { data: "id_pegawai", name: "id_pegawai" },
       { data: "nama", name: "nama" },
+      { data: "nip", name: "nip" },
       { data: "password", name: "password" },
       { data: "id_jabatan", name: "id_jabatan" },
       { data: "id_wilayah", name: "id_wilayah" },
