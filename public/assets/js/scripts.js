@@ -63,6 +63,40 @@ $(function () {
     },
   });
 
+  $("#pegawai-table").DataTable({
+    processing: true,
+    serverSide: true,
+    ajax: {
+      url: "http://localhost:8080/admin/pegawai/json",
+    },
+    columns: [
+      { data: "id_pegawai", name: "id_pegawai" },
+      { data: "nama", name: "nama" },
+      { data: "password", name: "password" },
+      { data: "id_jabatan", name: "id_jabatan" },
+      { data: "id_wilayah", name: "id_wilayah" },
+      { data: "aksi", name: "aksi" },
+    ],
+    responsive: true,
+    lengthChange: false,
+    autoWidth: false,
+    language: {
+      sProcessing: "Sedang memproses ...",
+      lengthMenu: "Tampilkan _MENU_ data per halaman",
+      zeroRecord: "Maaf data tidak tersedia",
+      info: "Menampilkan _PAGE_ halaman dari _PAGES_ halaman",
+      infoEmpty: "Tidak ada data yang tersedia",
+      infoFiltered: "(difilter dari _MAX_ total data)",
+      sSearch: "Cari",
+      oPaginate: {
+        sFirst: "Pertama",
+        sPrevious: "Sebelumnya",
+        sNext: "Selanjutnya",
+        sLast: "Terakhir",
+      },
+    },
+  });
+
   $("#form-jabatan").validate({
     rules: {
       nama_jabatan: {
