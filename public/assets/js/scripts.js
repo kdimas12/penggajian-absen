@@ -41,6 +41,7 @@ $(function () {
     columns: [
       { data: "id_wilayah", name: "id_wilayah" },
       { data: "nama", name: "nama" },
+      { data: "aksi", name: "aksi" },
     ],
     responsive: true,
     lengthChange: false,
