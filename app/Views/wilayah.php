@@ -15,6 +15,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama Wilayah</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                     </table>
