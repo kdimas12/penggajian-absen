@@ -46,6 +46,10 @@ class AdminPegawai extends BaseController
 
     public function loadData()
     {
-        return datatables('tbl_pegawai')->make();
+        return datatables('tbl_pegawai')->addColumn('aksi', function ($data) {
+            $urlUbah = base_url('admin/pegawai/' . $data->id_pegawai . '/ubah');
+            $urlHapus = base_url('admin/pegawai/' . $data->id_wilayah . '/hapus');
+            return '<div class="btn-group"><a href="' . $urlUbah . '" class="btn btn-primary"><i class="fas fa-edit"></i></a><a href="' . $urlHapus . '" class="btn btn-danger"><i class="fas fa-trash"></i></a></div>';
+        })->rawColumns(['aksi'])->make();
     }
 }
