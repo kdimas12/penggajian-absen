@@ -60,7 +60,15 @@ class AdminJabatan extends BaseController
 
     public function loadData()
     {
-        return datatables('tbl_jabatan')->addColumn('aksi', function ($data) {
+        function formatRupiah($value)
+        {
+            return "Rp " . number_format($value, 2, ',', '.');
+        }
+        return datatables('tbl_jabatan')->editColumn('uang_lembur', function ($value) {
+            return formatRupiah($value);
+        })->editColumn('uang_makan', function ($value) {
+            return formatRupiah($value);
+        })->addColumn('aksi', function ($data) {
             $urlUbah = base_url('admin/jabatan/' . $data->id_jabatan . '/ubah');
             $urlHapus = base_url('admin/jabatan/' . $data->id_jabatan . '/hapus');
             return '<div class="btn-group"><a href="' . $urlUbah . '" class="btn btn-primary"><i class="fas fa-edit"></i></a><a href="' . $urlHapus . '" class="btn btn-danger"><i class="fas fa-trash"></i></a></div>';
