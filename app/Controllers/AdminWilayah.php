@@ -21,7 +21,7 @@ class AdminWilayah extends BaseController
         if ($isDataValid) {
             $wilayah = new WilayahModel();
             $wilayah->insert([
-                'nama' => $this->request->getPost('nama_wilayah'),
+                'nama_wilayah' => $this->request->getPost('nama_wilayah'),
             ]);
             return redirect()->to('admin/wilayah');
         }

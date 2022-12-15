@@ -32,7 +32,7 @@ class AdminPegawai extends BaseController
         if ($isDataValid) {
             $wilayah = new PegawaiModel();
             $wilayah->insert([
-                'nama' => $this->request->getPost('nama_pegawai'),
+                'nama_pegawai' => $this->request->getPost('nama_pegawai'),
                 'nip' => $this->request->getPost('nip'),
                 'password' => "",
                 'id_jabatan' => $this->request->getPost('jabatan'),
