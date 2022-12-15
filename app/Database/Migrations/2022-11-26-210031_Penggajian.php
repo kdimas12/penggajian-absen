@@ -40,7 +40,7 @@ class Penggajian extends Migration
         $this->forge->addField([
             'id_pegawai' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
             'nama' => ['type' => 'VARCHAR', 'constraint' => 30],
-            'nip' => ['type' => 'INT', 'constraint' => 18],
+            'nip' => ['type' => 'VARCHAR', 'constraint' => 18],
             'password' => ['type' => 'VARCHAR', 'constraint' => 50],
             'id_jabatan' => ['type' => 'INT', 'constraint' => 5],
             'id_wilayah' => ['type' => 'INT', 'constraint' => 5],
