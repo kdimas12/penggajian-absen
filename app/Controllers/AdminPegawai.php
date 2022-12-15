@@ -46,7 +46,7 @@ class AdminPegawai extends BaseController
 
     public function loadData()
     {
-        return datatables('tbl_pegawai')->join('tbl_jabatan', 'tbl_pegawai.id_jabatan = tbl_jabatan.id_jabatan', 'INNER')->addColumn('aksi', function ($data) {
+        return datatables('tbl_pegawai')->join('tbl_jabatan', 'tbl_pegawai.id_jabatan = tbl_jabatan.id_jabatan', 'INNER')->join('tbl_wilayah', 'tbl_pegawai.id_wilayah = tbl_wilayah.id_wilayah', 'INNER')->addColumn('aksi', function ($data) {
             $urlUbah = base_url('admin/pegawai/' . $data->id_pegawai . '/ubah');
             $urlHapus = base_url('admin/pegawai/' . $data->id_wilayah . '/hapus');
             return '<div class="btn-group"><a href="' . $urlUbah . '" class="btn btn-primary"><i class="fas fa-edit"></i></a><a href="' . $urlHapus . '" class="btn btn-danger"><i class="fas fa-trash"></i></a></div>';
