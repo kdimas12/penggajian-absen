@@ -32,17 +32,17 @@
                 <div class="form-group">
                     <label for="jabatan">Jabatan</label>
                     <select class="custom-select" id="jabatan" name="jabatan">
-                        <option>Value 1</option>
-                        <option>Value 2</option>
-                        <option>Value 3</option>
+                        <?php foreach ($jabatan as $jab) : ?>
+                            <option value="<?= $jab['id_jabatan'] ?>"><?= $jab['nama'] ?></option>
+                        <?php endforeach ?>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="wilayah">Wilayah</label>
                     <select class="custom-select" id="wilayah" name="wilayah">
-                        <option>Value 1</option>
-                        <option>Value 2</option>
-                        <option>Value 3</option>
+                        <?php foreach ($wilayah as $wil) : ?>
+                            <option value="<?= $wil['id_wilayah'] ?>"><?= $wil['nama'] ?></option>
+                        <?php endforeach ?>
                     </select>
                 </div>
             </div>
