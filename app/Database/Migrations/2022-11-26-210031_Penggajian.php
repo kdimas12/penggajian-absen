@@ -31,7 +31,7 @@ class Penggajian extends Migration
         // tbl_wilayah
         $this->forge->addField([
             'id_wilayah' => ['type' => 'INT', 'constraint' => 5, 'auto_increment' => true],
-            'nama' => ['type' => 'INT', 'constraint' => 20]
+            'nama' => ['type' => 'VARCHAR', 'constraint' => 20]
         ]);
         $this->forge->addPrimaryKey('id_wilayah');
         $this->forge->createTable('tbl_wilayah');
