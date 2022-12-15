@@ -10,7 +10,7 @@
                     <a href="<?= base_url('admin/pegawai/tambah') ?>" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
                 </div>
                 <div class="card-body">
-                    <table id="jabatan-table" class="table table-bordered table-striped">
+                    <table id="pegawai-table" class="table table-bordered table-striped">
                         <thead>
                             <tr>
                                 <th>No</th>
