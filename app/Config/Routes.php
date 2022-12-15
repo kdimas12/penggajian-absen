@@ -53,7 +53,13 @@ $routes->group('admin', function ($routes) {
         $routes->add('(:segment)/ubah', 'AdminWilayah::ubah/$1');
         $routes->get('(:segment)/hapus', 'AdminWilayah::hapus/$1');
     });
-    $routes->get('pegawai', 'AdminPegawai::index');
+    $routes->group('pegawai', function ($routes) {
+        $routes->get('/', 'AdminPegawai::index');
+        $routes->add('tambah', 'AdminPegawai::tambah');
+        $routes->get('json', 'AdminPegawai::loadData');
+        $routes->add('(:segment)/ubah', 'AdminPegawai::ubah/$1');
+        $routes->get('(:segment)/hapus', 'AdminPegawai::hapus/$1');
+    });
 });
 
 $routes->group('user', function ($routes) {
