@@ -3,7 +3,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\JabatanModel;
 use App\Models\PegawaiModel;
+use App\Models\WilayahModel;
 
 class AdminPegawai extends BaseController
 {
@@ -14,6 +16,12 @@ class AdminPegawai extends BaseController
 
     public function tambah()
     {
+        $wilayah = new WilayahModel();
+        $jabatan = new JabatanModel();
+        $data = [
+            'jabatan' => $jabatan->findAll(),
+            'wilayah' => $wilayah->findAll()
+        ];
         $validation = \Config\Services::validation();
         $validation->setRules([
             'nama_pegawai' => 'required',
@@ -33,7 +41,7 @@ class AdminPegawai extends BaseController
             return redirect()->to('admin/pegawai');
         }
 
-        echo view('pegawai_tambah');
+        echo view('pegawai_tambah', $data);
     }
 
     public function loadData()
