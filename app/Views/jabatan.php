@@ -5,11 +5,11 @@
     <div class="row">
         <div class="col-12">
             <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">DataTable with default features</h3>
+                <div class="card-header d-flex align-items-center">
+                    <h3 class="card-title mr-2">Data Jabatan</h3>
+                    <a href="<?= base_url('admin/jabatan/tambah') ?>" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
                 </div>
                 <div class="card-body">
-                    <a href="<?= base_url('admin/jabatan/tambah') ?>" class="btn btn-primary mb-2"><i class="fas fa-plus"></i> Tambah</a>
                     <table id="jabatan-table" class="table table-bordered table-striped">
                         <thead>
                             <tr>
