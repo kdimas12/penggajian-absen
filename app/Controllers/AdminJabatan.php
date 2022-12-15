@@ -21,7 +21,7 @@ class AdminJabatan extends BaseController
         if ($isDataValid) {
             $jabatan = new JabatanModel();
             $jabatan->insert([
-                'nama' => $this->request->getPost('nama_jabatan'),
+                'nama_jabatan' => $this->request->getPost('nama_jabatan'),
                 'uang_lembur' => $this->request->getPost('uang_lembur'),
                 'uang_makan' => $this->request->getPost('uang_makan')
             ]);

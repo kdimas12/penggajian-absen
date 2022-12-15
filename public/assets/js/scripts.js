@@ -7,7 +7,7 @@ $(function () {
     },
     columns: [
       { data: "id_jabatan", name: "id_jabatan" },
-      { data: "nama", name: "nama" },
+      { data: "nama_jabatan", name: "nama_jabatan" },
       { data: "uang_lembur", name: "uang_lembur" },
       { data: "uang_makan", name: "uang_makan" },
       { data: "aksi", name: "aksi" },
@@ -40,7 +40,7 @@ $(function () {
     },
     columns: [
       { data: "id_wilayah", name: "id_wilayah" },
-      { data: "nama", name: "nama" },
+      { data: "nama_wilayah", name: "nama_wilayah" },
       { data: "aksi", name: "aksi" },
     ],
     responsive: true,
@@ -71,7 +71,7 @@ $(function () {
     },
     columns: [
       { data: "id_pegawai", name: "id_pegawai" },
-      { data: "nama", name: "nama" },
+      { data: "nama_pegawai", name: "nama_pegawai" },
       { data: "nip", name: "nip" },
       { data: "password", name: "password" },
       { data: "id_jabatan", name: "id_jabatan" },
