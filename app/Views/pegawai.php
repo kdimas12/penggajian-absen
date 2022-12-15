@@ -16,8 +16,10 @@
                                 <th>No</th>
                                 <th>Nama</th>
                                 <th>NIP</th>
+                                <th>Password</th>
                                 <th>Jabatan</th>
                                 <th>Wilayah</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                     </table>
