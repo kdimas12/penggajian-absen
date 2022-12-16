@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header d-flex align-items-center">
                     <h3 class="card-title mr-2">Data Pegawai</h3>
-                    <a href="<?= base_url('admin/pegawai/tambah') ?>" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
+                    <a href="<?= base_url('admin/pegawai/tambah') ?>" class="btn btn-primary ml-auto"><i class="fas fa-plus"></i> Tambah</a>
                 </div>
                 <div class="card-body">
                     <table id="pegawai-table" class="table table-bordered table-striped">
